@@ -30,16 +30,16 @@ L'application doit respecter les pratiques de sécurité : standards OWASP et le
 - Cloner ce projet (backend) ainsi que le frontend : https://github.com/OpenClassrooms-Student-Center/dwj-projet6
 
 - Frontend :
- - Ouvrir le terminal sur ce dossier et exécuter npm install pour installer les dépendances.
- - Exécuter npm install node-sass pour installer sass.
- - Le projet a été généré avec Angular CLI version 7.0.2.
- - Démarrer ng serve (ou npm start) pour avoir accès au serveur de développement.
- - Rendez-vous sur http://localhost:4200.
+  - Ouvrir le terminal sur ce dossier et exécuter npm install pour installer les dépendances.
+  - Exécuter npm install node-sass pour installer sass.
+  - Le projet a été généré avec Angular CLI version 7.0.2.
+  - Démarrer ng serve (ou npm start) pour avoir accès au serveur de développement.
+  - Rendez-vous sur http://localhost:4200.
 
 - Backend :
- - Ouvrir le terminal sur ce dossier.
- - Pour utiliser le serveur, chargez le package nodemon : npm install -g nodemon.
- - Puis lancez le serveur: nodemon server.
+  - Ouvrir le terminal sur ce dossier.
+  - Pour utiliser le serveur, chargez le package nodemon : npm install -g nodemon.
+  - Puis lancez le serveur: nodemon server.
 
 
 ### Technologies utilisées :
