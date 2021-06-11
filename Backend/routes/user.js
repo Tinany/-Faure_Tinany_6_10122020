@@ -1,7 +1,9 @@
-
 //Express
 const express = require('express');
 const router = express.Router();
+
+//Validator
+const {checkSignUp} = require('../middleware/validator');
 
 //User controllers
 const userController = require('../controllers/user');
