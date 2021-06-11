@@ -1,3 +1,6 @@
+//Dotenv
+require('dotenv').config();
+
 // Import http package & express app
 const http = require('http');
 const app = require('./app');
@@ -16,7 +19,7 @@ const normalizePort = val => {
 };
 
 //Port to listen
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 // Error handling
@@ -40,7 +43,6 @@ const errorHandler = error => {
   }
 };
 
-
 // Server creation
 const server = http.createServer(app);
 
@@ -55,4 +57,3 @@ server.on('listening', () => {
 });
 
 server.listen(port);
-  
