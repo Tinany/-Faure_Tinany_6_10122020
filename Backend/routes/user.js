@@ -9,7 +9,7 @@ const {checkSignUp} = require('../middleware/validator');
 const userController = require('../controllers/user');
 
 //Route Users :
-router.post('/signup', userController.signup);
+router.post('/signup', checkSignUp, userController.signup);
 router.post('/login', userController.login);
 
 module.exports = router;

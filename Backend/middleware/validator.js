@@ -1,7 +1,7 @@
 const {validationResult, check} = require('express-validator');
 
 exports.checkSignUp = [
-    check('email').isEmail().trim,
+    check('email').isEmail().trim(),
     check('password').isLength({min: 8}),
     (req, res, next) => {
         const errors = validationResult(req)
@@ -25,3 +25,10 @@ exports.checkSauceInfo = [
         next();
     }
 ]
+
+exports.parse = (req, res, next) => {
+    if (req.body.sauce) {
+        req.body = JSON.parse(req.body.sauce)
+    }
+    next()
+}
