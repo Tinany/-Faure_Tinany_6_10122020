@@ -6,7 +6,7 @@ const fs = require('fs');
 
 // Creation
 exports.createSauce = (req, res, next) => {
-  const sauceObject = JSON.parse(req.body.sauce);
+  const sauceObject = req.body;
   delete sauceObject._id;
   if (!sauceObject.userId || !sauceObject.name ||
     !sauceObject.manufacturer || !sauceObject.description ||
@@ -35,7 +35,7 @@ exports.updateSauce = (req, res, next) => {
 
   const sauceObject = req.file ?
     {
-      ...JSON.parse(req.body.sauce),
+      ...req.body,
       imageUrl: `${req.protocol}://${req.get('host')}/images/${req.file.filename}`
     } :
     { ...req.body };
