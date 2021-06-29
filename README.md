@@ -40,6 +40,7 @@ L'application doit respecter les pratiques de sécurité : standards OWASP et le
   - Ouvrir le terminal sur ce dossier.
   - Pour utiliser le serveur, chargez le package nodemon : npm install -g nodemon.
   - Puis lancez le serveur: nodemon server.
+  - Veillez à remplacer (dans le fichier .env) Your_Database par l'adresse de votre base de donnée.
 
 
 ### Technologies utilisées :
